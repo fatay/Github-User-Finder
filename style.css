@@ -1,0 +1,61 @@
+.navbar-dark {
+  background-color: #022863 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:300i400,500,600,700,800,900&display=swap');
+
+* {
+  margin:0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+.alignCenter {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contentMargin {
+  margin-top:40px;
+}
+
+input{
+  outline: none !important;
+}
+
+h3 {
+  font-weight: 700 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.gitHubLogo {
+  width:240px;
+  height: 240px;
+}
+
+* {
+  text-decoration: none !important;
+}
+
+#gitHubLogo {
+  border-radius: 100%;
+  border:2px solid #022863;
+  margin-bottom:24px;
+}
+
+ul .bg-dark {
+  background-color:#cdd7d6 !important;
+}
+
+ul .text-danger {
+  color: #022863 !important;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-around;
+}

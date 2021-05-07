@@ -15,12 +15,12 @@ class UI {
       profile.innerHTML = 
       `
       <div class="flexBox">
-        <b>Name:<h5 class="text-primary"> ${user.name}</h5></b>
-        <b>Followers:<h5 class="text-primary"> ${user.followers}</h5></b>
-        <b>Following:<h5 class="text-primary"> ${user.following}</h5></b>
-        <b>Public Repos:<h5 class="text-primary"> ${user.public_repos}</h5></b>
-        <b>Location:<h5 class="text-primary"> ${user.location}</h5></b>
-        <b>Company:<h5 class="text-primary"> ${user.company}</h5></b>
+        <b>Name:<span class="text-primary"> ${user.name}</span></b><br>
+        <b>Followers:<span class="text-primary"> ${user.followers}</span></b><br>
+        <b>Following:<span class="text-primary"> ${user.following}</span></b><br>
+        <b>Public Repos:<span class="text-primary"> ${user.public_repos}</span></b><br>
+        <b>Location:<span class="text-primary"> ${user.location}</span></b><br>
+        <b>Company:<span class="text-primary"> ${user.company}</span></b>
       </div>
       `;
   
@@ -53,12 +53,12 @@ class UI {
       starredRepos.innerHTML = 
       `
       <ul class="list-group">
-        <li class="list-group-item text-danger bg-dark" aria-current="true"><b>Latest Repos</b></li>
-        <li class="list-group-item"><b>${repo[0].name}</b><span class="badge bg-warning">${repo[0].stargazer_count}</span></li>
-        <li class="list-group-item"><b>${repo[1].name}</b><span class="badge bg-warning">${repo[1].stargazer_count}</span></li>
-        <li class="list-group-item"><b>${repo[2].name}</b><span class="badge bg-warning">${repo[2].stargazer_count}</span></li>
-        <li class="list-group-item"><b>${repo[3].name}</b><span class="badge bg-warning">${repo[3].stargazer_count}</span></li>
-        <li class="list-group-item"><b>${repo[4].name}</b><span class="badge bg-warning">${repo[4].stargazer_count}</span></li>
+        <li class="list-group-item text-danger bg-dark" aria-current="true"><b>Most Starred Repos</b></li>
+        <li class="list-group-item"><b>${repo[0].name}</b><span class="badge bg-warning">${repo[0].stargazers_count}</span></li>
+        <li class="list-group-item"><b>${repo[1].name}</b><span class="badge bg-warning">${repo[1].stargazers_count}</span></li>
+        <li class="list-group-item"><b>${repo[2].name}</b><span class="badge bg-warning">${repo[2].stargazers_count}</span></li>
+        <li class="list-group-item"><b>${repo[3].name}</b><span class="badge bg-warning">${repo[3].stargazers_count}</span></li>
+        <li class="list-group-item"><b>${repo[4].name}</b><span class="badge bg-warning">${repo[4].stargazers_count}</span></li>
       </ul>
       `;
     }

@@ -32,7 +32,7 @@ searchUser.addEventListener('keyup', (e) => {
           ui.showRepoLatest(data.repo);
         }
       });
-    github.getRepo(userText)
+    github.getRepoStars(userText)
       .then(data =>  {
         if(data.repo.length === 0) {
           // Show alert

@@ -29,10 +29,8 @@ class GitHub {
   async getRepoStars(user) {
     const repoResponse = await fetch(`https://api.github.com/users/${user}/repos?client_id=${this.client_id}&client_secret=${this.secret_key}`);
     
-    const repo = await repoResponse.json();
-    repo.sort(function (a, b) {
-      return b.stargazer_count.localeCompare(a.stargazer_count);
-    });
+    const getRepo = await repoResponse.json();
+    let repo = getRepo.sort(function(a, b) {return b.stargazers_count - a.stargazers_count});
     
     return {
       repo
